@@ -7,8 +7,17 @@
   "bin": {
     "cimi": "bin/cli.js"
   },
+  "files": [
+    "bin",
+    "core",
+    "plugins",
+    "templates",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "start": "node bin/cli.js",
+    "dev": "node bin/cli.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -17,16 +26,21 @@
     "generator",
     "nodejs"
   ],
-  "author": "",
+  "author": "muri",
   "license": "MIT",
+  "engines":{
+    "node":">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muri-repo/cimi.git"
+  },
+  "homepage": "https://github.com/muri-repo/cimi.git",
   "dependencies": {
     "chalk": "^5.6.2",
     "commander": "^11.1.0",
     "inquirer": "^13.4.2",
     "nanospinner": "^1.2.2",
     "ora": "^9.4.0"
-  },
-  "engines": {
-    "node": ">=16.0.0"
   }
 }
